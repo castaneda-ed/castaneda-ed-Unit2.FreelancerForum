@@ -23,11 +23,10 @@ const freelancers = [
     { name: "Spark", price: 75, occupation: "dancer" },
     { name: "Wire", price: 45, occupation: "carpenter" },
     { name: "Goose", price: 70, occupation: "electrician" },
-    { name: "Patricio", price: 35, occupation: "roofer" },
-    { name: "Ganzo", price: 100, occupation: "gamer" },
   ];
 const actualFreelancer = [
-
+  { name: "Patricio", price: 35, occupation: "roofer" },
+  { name: "Ganzo", price: 100, occupation: "gamer" },
   ]
 
     
