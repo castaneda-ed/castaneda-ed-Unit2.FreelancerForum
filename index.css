@@ -25,14 +25,21 @@ li {
   }
 section {
     background-color: rgb(180, 166, 166);
-    text-align: center;
     border: 2px solid black;
     border-radius: 10px;
     height: 50%;
     width: 50%;
 }
+.align {
+    text-align: center;
+}
 section * {
-    margin-top: 6px;
+    margin-top: 5px;
+}
+.titles {
+    display: flex;
+justify-content: space-around
+
 }
 .freelancer {
     display: flex;
