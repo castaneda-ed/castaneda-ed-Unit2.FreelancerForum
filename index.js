@@ -66,7 +66,7 @@ const availablePrices = actualFreelancer.map((person) => {
   const averagePrice = actualFreelancer.length > 0 ? (totalPrice / actualFreelancer.length) : 0;
 
   const average = document.querySelector('#average');
-  average.textContent = averagePrice;
+  average.textContent = `$${averagePrice.toFixed(2)}`;
 }
 
 function selectFreelancer() {
