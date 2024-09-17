@@ -7,7 +7,7 @@
 body{
     height: 100vh;
     width: 100vw;
-    background-color: rgb(100, 119, 69);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(29,168,253,1) 47%, rgba(252,69,225,1) 100%);
 }
 main {
     display: flex;
@@ -21,24 +21,34 @@ ul {
 }
 li {
     list-style: none;
-    margin: .5remrem;
+    margin: .5rem;
+    
+  }
+  li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   }
 section {
-    background-color: rgb(180, 166, 166);
     border: 2px solid black;
     border-radius: 10px;
-    height: 50%;
+    height: 60%;
     width: 50%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.8);
 }
 .align {
     text-align: center;
+    color: #000000;
 }
 section * {
     margin-top: 5px;
 }
 .titles {
-    display: flex;
-justify-content: space-around
+display: flex;
+justify-content: space-around;
+color: rgb(72, 80, 44);
+text-transform: uppercase;
 
 }
 .freelancer {
@@ -47,8 +57,32 @@ justify-content: space-around
 }
 
 .list {
-    list-style: ✔️;
-    border: 1px solid black;
-    font-size: 1rem;
-    color: pink;
+list-style: ✔️;
+border: 1px solid black;
+font-size: 1rem;
+color: pink;
+}
+#average {
+font-weight: bold;
+ color: #4A90E2;
+ }
+ #names li {
+    color: #4A90E2;
+  }
+#occupations li {
+color: #50C878;
+}
+#prices li {
+color: #E74C3C;
+}
+/* Media Queries */
+ @media (max-width: 768px) {
+#names, #occupations, #prices {
+flex-direction: column;
+}
+      
+li {
+width: auto;
+margin: 10px 0;
+}
 }
